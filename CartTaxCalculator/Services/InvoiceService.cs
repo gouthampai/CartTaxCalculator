@@ -14,7 +14,7 @@ namespace CartTaxCalculator.Services
 
     public Invoice GenerateInvoiceFromCart(Cart cart)
     {
-      if (cart?.Items == null || !cart.Items.Any())
+      if (cart?.Items == null)
       {
         throw new ArgumentNullException("cart or cart items are null");
       }
